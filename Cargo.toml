@@ -1,0 +1,17 @@
+[package]
+name = "tranco"
+version = "0.1.0"
+edition = "2024"
+authors = [ "Jade <jade@witchof.space>" ]
+description = "Rust library for the Tranco list"
+repository = "https://github.com/witchof0x20/tranco"
+homepage =  "https://tranco-list.eu/"
+license = "GPL-3.0-only"
+
+[dependencies]
+reqwest = { version = "0.12", features = ["json"]}
+serde = { version = "1.0.219", features = ["derive"] }
+thiserror = "2.0.12"
+
+[dev-dependencies]
+tokio = { version = "1", default-features = false, features = ["macros", "rt-multi-thread"] }
